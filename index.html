@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>freeCodeCamp Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform!</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+      <label id="email-label">Email <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+      <label id="number-label">Age (optional) <input id="number" name="number" type="number" placeholder="Age" min="13" max="120" /></label>
+      <label>Do you currently use freeCodeCamp?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+        </select>
+      </label>
+      <label id="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="personal" /> Personal Account</label>
+        <label id="teaching-account"><input id="teaching-account" type="radio" name="account-type" class="inline" value="teaching" /> Teaching Account</label>
+      <label>
+        <legend>What were your interests while using freeCodeCamp?</legend>
+          <input id="front-end" type="checkbox" name="front-end" value="front-end" class="inline" required /> Front-End
+          <input id="back-end" type="checkbox" name="back-end" value="back-end" class="inline" required /> Back-end 
+      </label>
+      <label id="comments">Please provide concerns if any:
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I encountered issues with..."></textarea>
+        </label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+</html>
